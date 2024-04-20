@@ -19,9 +19,5 @@ function abrirMenu() {
 
 // Criar função para fechar menu
 function fecharMenu(){
-    bodyElement.style.overflow = 'auto' // Rolagem Automática
-    menu.style.display = 'none' // Oculta o Menu
-    menu.style.flexDirection = 'row' // A direção fica em linha
-    btnMenu.style.display = 'inline' // Aparece o botão Hamburguer
-    btnFechar.style.display = 'none' // Oculta o botão fechar
+    window.location.reload() // Recarrega a Página
 }
