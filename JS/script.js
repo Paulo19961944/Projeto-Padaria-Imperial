@@ -1,26 +1,27 @@
-var menu = document.querySelector('ul')
-var btnMenu = document.getElementById('menuBtn')
-var btnFechar = document.getElementById('fecharBtn')
-btnMenu.addEventListener('click', abrirMenu)
-btnFechar.addEventListener('click', fecharMenu)
+var menu = document.querySelector('ul') // Seleciona o Menu
+var btnMenu = document.getElementById('menuBtn') // Seleciona o Botão de Menu Hamburguer
+var btnFechar = document.getElementById('fecharBtn') // Seleciona o botão de fechar
+var bodyElement = window.document.body // Seleciona o Conteúdo HTML
+btnMenu.addEventListener('click', abrirMenu) // Adiciona evento ao menu hamburguer
+btnFechar.addEventListener('click', fecharMenu) // Adiciona evento ao menu fechar
 
 // Criar Função para abrir o menu
 function abrirMenu() {
-    menu.style.display = 'flex'
-    menu.style.flexDirection = 'column'
-    menu.style.justifyContent = 'center'
-    menu.style.alignItems = 'center'
-    menu.style.gap = '48px'
-    btnMenu.style.display = 'none'
-    btnFechar.style.display = 'inline'
+    bodyElement.style.overflow = 'hidden' // Trava a tela
+    menu.style.display = 'flex' // Flexbox
+    menu.style.flexDirection = 'column' // Elementos em Colunas
+    menu.style.justifyContent = 'center' // Alinha ao centro no eixo principal
+    menu.style.alignItems = 'center' // Alinha ao centro no eixo horizontal
+    menu.style.gap = '48px' // Espaçamento entre os elementos
+    btnMenu.style.display = 'none' // Oculta o Botão Hamburguer
+    btnFechar.style.display = 'inline' // Aparece o botão fechar
 }
 
+// Criar função para fechar menu
 function fecharMenu(){
-    menu.style.display = ''
-    menu.style.flexDirection = ''
-    menu.style.justifyContent = ''
-    menu.style.alignItems = ''
-    menu.style.gap = ''
-    btnMenu.style.display = ''
-    btnFechar.style.display = ''
+    bodyElement.style.overflow = 'auto' // Rolagem Automática
+    menu.style.display = 'none' // Oculta o Menu
+    menu.style.flexDirection = 'row' // A direção fica em linha
+    btnMenu.style.display = 'inline' // Aparece o botão Hamburguer
+    btnFechar.style.display = 'none' // Oculta o botão fechar
 }

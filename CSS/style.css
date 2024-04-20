@@ -1,8 +1,10 @@
+/*ESTILO GLOBAL*/
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0; /*Zera a Margem*/
+    padding: 0; /*Zera o Preenchimento*/
 }
 
+/*CONTEÚDO HTML*/
 body{
     display: flex; /*Flexbox*/
     justify-content: center; /*Centraliza o Container*/
@@ -11,120 +13,145 @@ body{
     padding: 16px; /*Espacamento Interno*/
 }
 
+/*CONTAINER DA PÁGINA*/
 #container{
-    max-width: 1200px;
+    max-width: 1200px; /*Largura máxima de 1200px*/
 }
 
+/*ESTILO DO MENU*/
+#menuBtn,
 #fecharBtn, #menuBtn{
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-    width: 32px;
-    height: 32px;
+    cursor: pointer; /*Mãozinha ao passar sobre o elemento*/
+    position: absolute; /*Posição Absoluta*/
+    top: 0; /*Ajusta no topo*/
+    right: 0; /*Ajusta na Direita*/
+    z-index: 2; /*Coloca 2 camadas a frente*/
+    width: 32px; /*Largura de 32px*/
+    height: 32px; /*Altura de 32px*/
 }
+
+/*MENU FECHAR*/
 #fecharBtn{
-    display: none;
+    display: none; /*Oculta o botão*/
 }
 
+/*CABEÇALHO*/
 header{
-    text-align: center;
+    text-align: center; /*Alinha o texto ao centro*/
 }
 
+/*IMAGEM DO CABEÇALHO*/
 header img{
-    width: 144px;
+    width: 144px; /*Largura de 144px*/
 }
 
+/*MENU*/
 #menu{
-    display: none;
-    background-color: rgba(251, 208, 166, 0.918);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    list-style: none;
+    display: none; /*Oculta o menu*/
+    background-color: #fbd0a6ea; /*Cor de fundo*/
+    position: absolute; /*Posição Absoluta*/
+    top: 0; /*Ajusta no Topo*/
+    left: 0; /*Ajusta na Esquerda*/
+    width: 100%; /*Largura de 100%*/
+    height: 100%; /*Altura de 100%*/
+    text-align: center; /*Alinha o texto ao centro*/
+    list-style: none; /*Retira as bolinhas da lista*/
 }
 
+/*LINK DO BOTÃO*/
 #menu a{
-    background-color:#462216;
-    padding: 16px;
-    border-radius: 8px;
-    color: #E3883F;
-    text-decoration: none;
-    font-weight: bold;
+    background-color:#462216; /*Cor de Fundo - Marrom*/
+    padding: 16px; /*Preenchimento de 16px em todos os lados*/
+    border-radius: 8px; /*Arredonda a borda*/
+    color: #E3883F; /*Cor de Fundo*/
+    text-decoration: none; /*Retira o sublinhado do link*/
+    font-weight: bold; /*Fonte em Negrito*/
 }
 
+/*PARAGRÁFOS E TEXTO DO MENU*/
 p, a{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; /*Fonte do Google*/
 }
 
+/*TITULO DA PÁGINA*/
 h1, h2{
-    font-family: "Libre Baskerville", serif;
+    font-family: "Libre Baskerville", serif; /*Fonte do Google*/
 }
 
+/*IMAGEM DO PÃO*/
 #destaque_home{
-    width: 100%;
-    border-radius: 8px;
+    width: 100%; /*Largura de 100%*/
+    border-radius: 8px; /*Arredonda a borda*/
 }
 
+/*Título*/
 .artigo_home h1{
-    margin: 16px 0;    
+    margin: 16px 0; /*Margem Vertical de 16px e zera a Margem Horizontal*/
 }
 
+/*PARÁGRAFOS*/
 .artigo_home p{
-    margin: 24px 0;
-    font-size: 1.1rem;
-    line-height: 1.4;
+    margin: 24px 0; /*Margem Vertical de 24px e zera a Margem Horizontal*/
+    font-size: 1.1rem; /*Fonte de 110%*/
+    line-height: 1.4; /*Altura da Linha de 1.4x*/
 }
 
+/*RODAPÉ*/
 footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #FBD0A6;
-    margin-top: 32px;
-    padding: 24px;
-    border-radius: 8px;
+    display: flex; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    background-color: #FBD0A6; /*Cor de Fundo*/
+    margin-top: 32px; /*Margem de 32px no topo*/
+    padding: 24px; /*Preenchimento de 24px em todos os lados*/
+    border-radius: 8px; /*Arredonda a Borda*/
 }
 
+/*TITULO DO FOOTER*/
 footer h2{
-    margin-bottom: 16px;
+    margin-bottom: 16px; /*Margem de 16px no fundo*/
 }
 
+/*LINKS E PARÁGRAFOS*/
 footer a, footer p{
-    font-size: 0.95em;
-    line-height: 1.4;
+    font-size: 0.95em; /*Tamanho da fonte de 95%*/
+    line-height: 1.4; /*Altura da linha de 1.4x*/
 }
+
+/*LINKS DO RODAPÉ*/
 footer a{
-    color: #462216;
-    font-weight: bold;
+    color: #462216; /*Cor do Fundo Marrom*/
+    font-weight: bold; /*Texto em Negrito*/
 }
 
+/*TABLET*/
 @media (min-width: 768px) {
+    /*MENUS*/
     #fecharBtn, #menuBtn{
-        display: none;
+        display: none; /*Oculta os Botões*/
     }
 
+    /*CABEÇALHO*/
     header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: flex; /*Flexbox*/
+        justify-content: space-between; /*Alinha cada item nas Laterais*/
+        align-items: center; /*Alinha o Texto ao Centro*/
     }
 
+    /*MENU*/
     #menu{
-        position: static;
-        display: flex;
-        background-color: #ffffff00;
+        position: static; /*Posição Estática - Padrão*/
+        display: flex; /*Flexbox*/
+        background-color: transparent; /*Cor de Fundo Transparente*/
     }
 
+    /*COR DOS LINKS*/
     #menu a{
-        background-color: #ffffff00;
-        color: #000;
+        background-color: transparent; /*Cor de fundo transparente*/
+        color: #000; /*Cor dos Links Preto*/
     }
 
+    /*COR DOS LINS AO PASSAR O MOUSE*/
     #menu a:hover{
-        color: #e3883f;
+        color: #e3883f; /*Cor do Link - Amarelo*/
     }
 }
