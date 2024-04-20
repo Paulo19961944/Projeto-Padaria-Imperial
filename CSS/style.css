@@ -150,7 +150,7 @@ footer a{
         color: #000; /*Cor dos Links Preto*/
     }
 
-    /*COR DOS LINS AO PASSAR O MOUSE*/
+    /*COR DOS LINKS AO PASSAR O MOUSE*/
     #menu a:hover{
         color: #e3883f; /*Cor do Link - Amarelo*/
     }
