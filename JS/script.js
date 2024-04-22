@@ -7,17 +7,16 @@ btnFechar.addEventListener('click', fecharMenu) // Adiciona evento ao menu fecha
 
 // Criar Função para abrir o menu
 function abrirMenu() {
-    bodyElement.style.overflow = 'hidden' // Trava a tela
-    menu.style.display = 'flex' // Flexbox
-    menu.style.flexDirection = 'column' // Elementos em Colunas
-    menu.style.justifyContent = 'center' // Alinha ao centro no eixo principal
-    menu.style.alignItems = 'center' // Alinha ao centro no eixo horizontal
-    menu.style.gap = '48px' // Espaçamento entre os elementos
-    btnMenu.style.display = 'none' // Oculta o Botão Hamburguer
-    btnFechar.style.display = 'inline' // Aparece o botão fechar
+    bodyElement.classList.add('body-responsive') // Trava a tela
+    menu.classList.add('menu-responsive') // Aparece o Menu na Tela
+    btnMenu.classList.add('abrir-menu-responsive') // Oculta o Botão Hamburguer
+    btnFechar.classList.add('fechar-menu-responsive')// Aparece o botão fechar
 }
 
 // Criar função para fechar menu
 function fecharMenu(){
-    window.location.reload() // Recarrega a Página
+    bodyElement.classList.remove('body-responsive')
+    menu.classList.remove('menu-responsive')
+    btnMenu.classList.remove('abrir-menu-responsive') 
+    btnFechar.classList.remove('fechar-menu-responsive')
 }

@@ -13,13 +13,17 @@ body{
     padding: 16px; /*Espacamento Interno*/
 }
 
+/*ADICIONA CLASSE PARA MANIPULAÇÃO EM JAVASCRIPT*/
+.body-responsive{
+    overflow: hidden; /*Trava o Menu*/
+}
+
 /*CONTAINER DA PÁGINA*/
 #container{
     max-width: 1200px; /*Largura máxima de 1200px*/
 }
 
 /*ESTILO DO MENU*/
-#menuBtn,
 #fecharBtn, #menuBtn{
     cursor: pointer; /*Mãozinha ao passar sobre o elemento*/
     position: absolute; /*Posição Absoluta*/
@@ -33,6 +37,16 @@ body{
 /*MENU FECHAR*/
 #fecharBtn{
     display: none; /*Oculta o botão*/
+}
+
+/*CLASSE PARA MANIPULAÇÃO DE ELEMENTOS NO JAVASCRIPT*/
+.abrir-menu-responsive{
+    display: none; /*Oculta o Botão*/
+}
+
+/*CLASSE PARA MANIPULAÇÃO DE ELEMENTOS NO JAVASCRIPT*/
+.fechar-menu-responsive{
+    display: flex !important; /*Aparece o Botão com Especifidade Alta*/
 }
 
 /*CABEÇALHO*/
@@ -56,6 +70,15 @@ header img{
     height: 100%; /*Altura de 100%*/
     text-align: center; /*Alinha o texto ao centro*/
     list-style: none; /*Retira as bolinhas da lista*/
+}
+
+/*CLASSE PARA MANIPULAÇÃO DE ELEMENTOS NO JAVASCRIPT*/
+.menu-responsive{
+    display: flex !important; /*Flexbox*/
+    flex-direction: column; /*Alinha em Colunas*/
+    align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+    justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+    gap: 48px; /*Altura de 48px*/
 }
 
 /*LINK DO BOTÃO*/
